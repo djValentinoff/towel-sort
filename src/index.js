@@ -1,6 +1,7 @@
+module.exports = towelSort = (arr = []) => {
+  const newArr = [];
+  arr.forEach((item, index)=>
+    index%2 === 0 ? newArr.push(...item) : newArr.push(...item.reverse()));
 
-// You should implement your task here.
-
-module.exports = function towelSort (matrix) {
-  return [];
+ return newArr;
 }
